@@ -1,0 +1,195 @@
+📚 Cómo prender tu bot de Discord desde Android usando Replit (principiantes + usando .env)
+
+Este tutorial te explica paso a paso y desde cero cómo encender un bot de Discord que responde mensajes, usando tu celular Android y la plataforma gratuita Replit, guardando tu token en un archivo .env para mayor seguridad.
+
+
+---
+
+🧠 ¿Qué es un bot de Discord?
+
+Es un programa que vive dentro de tu servidor de Discord. Puede leer mensajes, responder, hacer chistes, dar canciones, y más. Tú ya tienes el código del bot listo para usarlo.
+
+
+---
+
+📦 Archivos que debes tener
+
+Tú ya cuentas con estos archivos en tu celular (¡bien hecho!):
+
+index.js → el código del bot
+
+respuestas.json → respuestas automáticas
+
+canciones.json → canciones recomendadas
+
+package.json → configuraciones y dependencias
+
+.env → contiene el token secreto del bot (lo crearás tú)
+
+
+
+---
+
+🛠️ PASO 1: Crear el bot en Discord
+
+1. Ve a https://discord.com/developers/applications
+
+
+2. Inicia sesión con tu cuenta
+
+
+3. Pulsa "New Application", ponle un nombre (ej. cejota)
+
+
+4. En el menú de la izquierda, entra a "Bot" y pulsa "Add Bot"
+
+
+5. Pulsa “Reset Token” y copia tu token
+
+
+6. Luego ve a OAuth2 > URL Generator
+
+Marca bot
+
+Marca los permisos: Read Messages y Send Messages
+
+
+
+7. Copia la URL generada y pégala en tu navegador para invitar el bot a tu servidor
+
+
+
+
+---
+
+📲 PASO 2: Crear tu proyecto en Replit (desde Android)
+
+1. Abre tu navegador Chrome y ve a: https://replit.com
+
+
+2. Activa la opción “Versión de escritorio” desde el menú (⋮)
+
+
+3. Inicia sesión en Replit
+
+
+4. Pulsa “Create Repl”
+
+Lenguaje: Node.js
+
+Nombre: cejota-bot
+
+Presiona "Create Repl"
+
+
+
+
+
+---
+
+📁 PASO 3: Sube tus archivos
+
+1. En la barra izquierda de archivos en Replit, mantén presionado y elige “Upload file”
+
+
+2. Sube uno por uno estos archivos:
+
+index.js
+
+respuestas.json
+
+canciones.json
+
+package.json
+
+
+
+
+
+---
+
+📄 PASO 4: Crear el archivo .env en Replit
+
+Este archivo guarda tu token secreto de forma segura. Haz lo siguiente:
+
+1. Toca el botón "Add file"
+
+
+2. Nómbralo exactamente así:
+
+.env
+
+
+3. Dentro de ese archivo escribe esto:
+
+TOKEN=TU_TOKEN_AQUÍ
+
+(Reemplaza TU_TOKEN_AQUÍ por el token que copiaste del portal de Discord)
+
+
+
+
+---
+
+⚙️ PASO 5: Instalar dependencias
+
+1. Abre la pestaña Shell o Console en la parte inferior
+
+
+2. Escribe este comando:
+
+npm install
+
+
+3. Replit descargará todo lo necesario (como discord.js y dotenv)
+
+
+
+
+---
+
+▶️ PASO 6: Prender el bot
+
+1. Toca el botón verde "Run" en la parte superior
+
+
+2. Si todo está bien, verás un mensaje como este en la consola:
+
+Bot conectado como cejota#1234
+
+
+
+¡Listo! Ya tienes tu bot prendido desde Android usando Replit 🔥
+
+
+---
+
+🧪 ¿Cómo probarlo?
+
+Entra a tu servidor de Discord y escribe cosas como:
+
+cejota hola
+
+cejota canción
+
+cejota que tan fuerte soy?
+
+cejota marcus es gay?
+
+
+El bot responderá automáticamente con frases o canciones.
+
+
+---
+
+⚠️ Notas importantes
+
+El archivo .env no debe llevar comillas ni espacios extra, debe verse así:
+
+TOKEN=MzEyMzQ1Njc4OTAxMjM0NTY3.Y8d...
+
+No compartas tu token con nadie (es la contraseña del bot).
+
+Replit apaga los bots tras un tiempo si no pagas el plan premium. Puedes usar sitios como UptimeRobot.com para mantenerlo prendido todo el día.
+
+
